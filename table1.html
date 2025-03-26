@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .positive {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .negative {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>% 1h</th>
+                <th>% 24h</th>
+                <th>% 7d</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="icons/bitcoin.png" alt="Bitcoin" class="icon">Bitcoin</td>
+                <td>BTC</td>
+                <td>$3,782.00</td>
+                <td class="negative">-0.64%</td>
+                <td class="negative">-9.37%</td>
+                <td class="positive">6.64%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="icons/xrp.png" alt="XRP" class="icon">XRP</td>
+                <td>XRP</td>
+                <td>$0.370</td>
+                <td class="negative">-1.59%</td>
+                <td class="negative">-13.12%</td>
+                <td class="positive">11.36%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="icons/ethereum.png" alt="Ethereum" class="icon">Ethereum</td>
+                <td>ETH</td>
+                <td>$125.06</td>
+                <td class="negative">-1.66%</td>
+                <td class="negative">-17.34%</td>
+                <td class="positive">32.12%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="icons/bitcoincash.png" alt="Bitcoin Cash" class="icon">Bitcoin Cash</td>
+                <td>BCH</td>
+                <td>$160.70</td>
+                <td class="negative">-1.22%</td>
+                <td class="negative">-19.25%</td>
+                <td class="positive">69.72%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src="icons/stellar.png" alt="Stellar" class="icon">Stellar</td>
+                <td>XLM</td>
+                <td>$0.120</td>
+                <td class="negative">-1.45%</td>
+                <td class="negative">-18.57%</td>
+                <td class="positive">10.25%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
